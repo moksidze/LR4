@@ -1,0 +1,22 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:MySimpleNotepad"
+             x:Class="MySimpleNotepad.App">
+	
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme Mode="Light"/>
+    </Application.Styles>
+
+	<Application.Resources>
+		<Image x:Key="backFolder" Source="/Assets/Icons/BackFolder.png" />
+		<Image x:Key="file" Source="/Assets/Icons/File.png" />
+		<Image x:Key="folder" Source="/Assets/Icons/Folder.png" />
+		<Image x:Key="hardrive" Source="/Assets/Icons/Hardrive.png" />
+		<Image x:Key="systemHardrive" Source="/Assets/Icons/SystemHardrive.png" />
+	</Application.Resources>
+	
+</Application>

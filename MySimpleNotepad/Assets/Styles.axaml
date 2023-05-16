@@ -1,0 +1,109 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Window Width="400" Height="600">
+			<Grid ShowGridLines="False" RowDefinitions="10*, *, *" ColumnDefinitions="*"
+				  Classes="" IsVisible="True">
+				<TextBox Grid.Row="0" Grid.Column="0"
+						 Name="FileContentBox" Text="Test"/>
+				<Button Grid.Row="1" Grid.Column="0"
+						Name="OpenButton" Content="Открыть"/>
+				<Button Grid.Row="2" Grid.Column="0"
+						Name="SaveButton" Content="Сохранить"/>
+			</Grid>
+		</Window>
+	</Design.PreviewWith>
+	
+	<!-- ~~~WINDOW'S STYLES~~~ -->
+	<Style Selector="Window">
+		<Setter Property="Background" Value="#DFE4E7"/>
+		
+		<Setter Property="FontFamily" Value="Inter"/>
+		<Setter	Property="FontStyle" Value="Normal"/>
+		<Setter Property="FontWeight" Value="Regular"/>
+		<Setter Property="Foreground" Value="#14181A"/>
+
+		<Setter Property="Width" Value="400"/>
+		<Setter Property="MinWidth" Value="400"/>
+		
+		<Setter Property="Height" Value="600"/>
+		<Setter Property="MinHeight" Value="600"/>
+	</Style>
+	
+	<!-- ~~~BUTTON'S STYLES~~~ -->
+	<Style Selector="Button">
+		<Setter Property="CornerRadius" Value="0"/>
+		<Setter Property="Background" Value="#A6B3BA"/>
+
+		<Setter Property="FontSize" Value="24"/>
+		<Setter Property="Foreground" Value="#404D54"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+	</Style>
+	
+	<Style Selector="Button:pointerover /template/ ContentPresenter">
+		<Setter Property="Background" Value="#899BA4"/>
+		<Setter	Property="TextBlock.Foreground" Value="#2A3337"/>
+	</Style>
+	
+	<Style Selector="Button:pressed /template/ ContentPresenter">
+		<Setter	Property="Background" Value="#6D828D"/>
+		<Setter	Property="TextBlock.Foreground" Value="#14181A"/>
+	</Style>
+	
+	<Style Selector="Button:focus /template/ ContentPresenter">
+		<Setter	Property="TextBlock.Foreground" Value="#14181A"/>
+	</Style>
+
+	<!-- ~Editor's styles~ -->
+	<Style Selector="Grid.Editor TextBox">
+		<Setter Property="AcceptsReturn" Value="True"/>
+		<Setter Property="TextWrapping" Value="NoWrap"/>
+		
+		<Setter Property="CornerRadius" Value="0"/>
+		<Setter Property="Background" Value="#DFE4E7"/>
+
+		<Setter Property="FontSize" Value="12"/>
+		<Setter Property="Foreground" Value="#404D54"/>
+		<Setter Property="FontWeight" Value="Regular"/>
+
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+	</Style>
+
+	<!-- ~Explorer's styles~ -->
+	<Style Selector="Grid.Explorer ListBox">
+		<Setter Property="Padding" Value="8"/>
+	</Style>
+
+	<Style Selector="Grid.Explorer ListBox Image">
+		<Setter Property="Margin" Value="8 0 8 0"/>
+		
+		<Setter Property="Width" Value="48"/>
+		<Setter Property="Height" Value="48"/>
+	</Style>
+
+	<Style Selector="Grid.Explorer ListBox TextBlock">
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+	</Style>
+	
+	<Style Selector="Grid.Explorer TextBox">
+		<Setter Property="TextWrapping" Value="NoWrap"/>
+
+		<Setter Property="CornerRadius" Value="0"/>
+		<Setter Property="Background" Value="#DFE4E7"/>
+
+		<Setter Property="FontSize" Value="24"/>
+		<Setter Property="Foreground" Value="#404D54"/>
+		<Setter Property="FontWeight" Value="Medium"/>
+
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+	</Style>
+
+</Styles>
